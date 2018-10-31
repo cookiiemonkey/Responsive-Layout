@@ -10,6 +10,9 @@
 img{
     width: 300px;
 }
+p{
+    color: lightslategray;
+}
 header,
 footer{
     background-color: #faf9f9;
@@ -43,7 +46,6 @@ header img{
     margin-top: 35px;
 }
 header p {
-    color: gray;
     padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
@@ -58,10 +60,11 @@ header p {
 .contact h3{
     text-transform: uppercase;
     font-size: 1em;
+    font: bold 1.2em caption;
     padding: 45px 40px 20px 40px;
 }
 .contact p{
-    color: gray;
+    
     padding-bottom: 20px;
 }
 .contact p:last-child{
@@ -88,11 +91,30 @@ footer ul li a{
 }
 /*END FOOTER*/
 
+/* START CONTENT*/
+.portfolio p {
+    padding-bottom: 20px;
+}
+/* END CONTENT*/
 
 
 /* MEDIA QUERIES */
 @media (min-width: 1024px){
-    
+    .wrapper{
+        max-width: 1024px;   
+    }
+    .nav h1{
+        float: left;
+        padding: 20px;
+    }  
+    .nav ul {
+        float: right;
+        padding: 20px;
+    }
+    .nav ul li {
+        float: left;
+        
+    }
 }
 @media (min-width: 768px){
     
